@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^api/student_grade/$', student_grade_view.as_view(),name='profile_list'),
     url(r'^api/student_details/$', studentdetails.as_view(),name='profile_list'),
     url(r'^api/profile_details/(?P<roll>\d+)/$', student_specific.as_view(),name='profile_list'),
+    url(r'^api/register/$',register_new_user.as_view(),name='profile_list')
 ]
